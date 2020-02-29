@@ -1,0 +1,20 @@
+.container-lg {
+  max-width: 1012px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.jumbotron {
+  background-color: #2b3137;
+}
+
+#home-svg{
+  width: 100%;
+  height: auto;
+}
+
+.carosel-img{
+  width: 400px;
+  height: 400px;
+  background-color: grey;
+}

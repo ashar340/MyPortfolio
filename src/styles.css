@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  overflow-x: hidden;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.container-lg{
+  max-width: 1012px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-lead{
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #979ca0;
+}
+
+.p-lead{
+  font-size: 1.25rem;
+}
+
+.lead{
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #586069;
+}
+
+.page-container{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.h0{
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.disabled:hover{
+  cursor: not-allowed;
+}

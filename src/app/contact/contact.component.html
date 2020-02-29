@@ -1,0 +1,54 @@
+<div class="container page-container">
+  <div class="row text-center justify-content-center">
+    <div class="col-md-8">
+      
+      <h1>Contact Me!</h1>
+      <p class="lead">I'm always looking forward to working with new people, learn about their experiences on unique projects and I would love to hear more about yours.</p>
+    </div>
+  </div>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)">
+    <div class="form-group">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <label for="inputName">Name</label>
+          <input class="form-control" id="inputName" placeholder="Enter name" type="text" [formControl]="contactForm.controls['name']">
+          <div *ngIf="!contactForm.controls['name'].valid && contactForm.controls['name'].touched" class="alert alert-danger"><strong>Warning! </strong> Please enter your full name</div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <label for="inputName">Email</label>
+          <input class="form-control" id="inputName" placeholder="Enter email" type="text" [formControl]="contactForm.controls['email']">
+          <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+          <div *ngIf="!contactForm.controls['email'].valid && contactForm.controls['email'].touched" class="alert alert-danger"><strong>Warning! </strong>not a valid email</div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <label for="inputMessage">Message</label>
+          <textarea class="form-control" id="inputMessage" rows="10" cols="100" placeholder="Enter message" [formControl]="contactForm.controls['message']"></textarea>
+          <div *ngIf="!contactForm.controls['message'].valid && contactForm.controls['message'].touched" class="alert alert-danger"><strong>Warning! </strong>Please enter a message</div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-2" *ngIf="status == null" id="button-block">
+        <div class="col-md-8">
+          <div class="form-buttons float-left">
+            <button type="submit" name="submit" id="submit" class="btn btn-lg btn-success" [class]="'btn btn-lg btn-success ' + getClass()" [disabled]="!contactForm.valid" >Send</button>
+            <button type="button" (click)="clearForm()" class="btn btn-lg btn-secondary">Clear</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="row justify-content-center post-message mt-2">
+    <div class="col-md-8">
+      <div class="alert alert-success"*ngIf="status == 1">
+        <strong>Awesome!</strong> Your email has been sent! I will get back to you soon :)
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

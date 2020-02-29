@@ -1,0 +1,23 @@
+pre {
+  padding-left: 15px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f9;
+  border-radius: 3px;
+}
+
+a{
+  color: grey;
+  text-decoration: none;
+}
+
+a:hover{
+  color: lightgrey;
+}
+
+@media (max-width: 769px) {
+  .card-title{
+    text-align: center;
+  }
+}
