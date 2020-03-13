@@ -6,13 +6,55 @@
 
 .jumbotron {
   background-color: rgb(23, 79, 210);
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 #home-svg{
   width: 100%;
   height: auto;
 }
+#sub-head{
+  background-color: rgb(18, 135, 69);
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 0 50px;
+}
 
+.sub-contents{
+  width: 65.3333333333%;
+  margin-left: 17.3333333333%;
+}
+
+.slate {
+  color: white;
+}
+
+p.statement {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+p.intro {
+  font-size: 2.0rem;
+  margin: 6rem 0 1.8rem;
+  line-height: 1.4;
+  font-weight: 700;
+  text-align: center;
+}
+
+.footer-btn a.btn {
+  margin: 2.4rem 0 0;
+}
+
+.footer-btn{
+  position: relative;
+}
+
+footer {
+  padding: 80px 0 50px;
+  color: #fff;
+}
 .carosel-img{
   width: 400px;
   height: 400px;
